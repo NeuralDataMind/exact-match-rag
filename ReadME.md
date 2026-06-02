@@ -14,7 +14,7 @@ The architecture abandons the standard "blind vector search" approach and is dri
 
 * **Vector Database:** PostgreSQL with `pgvector` extension
 * **Embedding Model:** Google `gemini-embedding-001` (Truncated to 768 dimensions via Matryoshka Representation Learning)
-* **Inference Engine:** Groq (`llama-3.3-70b-specdec`)
+* **Inference Engine:** Groq (`llama-3.3-70b-versatile`)
 * **Orchestration:** Python, LangChain (strictly for Document structuring)
 * **Frontend:** Streamlit 
 
@@ -108,3 +108,5 @@ streamlit run streamlit_app.py
 
 ### Your Next Action
 Commit this file. Then confirm if you successfully bypassed the Git rejection error (using the force or merge command I gave you earlier) and pushed your code to GitHub.
+
+```
