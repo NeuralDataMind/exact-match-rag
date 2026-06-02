@@ -4,7 +4,7 @@ services:
     container_name: vector-db
     environment:
       POSTGRES_USER: admin
-      POSTGRES_PASSWORD: adminpassword
+      POSTGRES_PASSWORD: adminpassword # Yep it is the password need to hack my DB. BOL(Best of Luck for Millennials)
       POSTGRES_DB: rag_system
     ports:
       - "5433:5432"
