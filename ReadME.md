@@ -107,5 +107,3 @@ streamlit run streamlit_app.py
 
 ### Your Next Action
 Commit this file. Then confirm if you successfully bypassed the Git rejection error (using the force or merge command I gave you earlier) and pushed your code to GitHub.
-
-```
