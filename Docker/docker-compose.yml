@@ -1,0 +1,21 @@
+services:
+  postgres-vector:
+    image: ankane/pgvector:latest
+    container_name: vector-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+      POSTGRES_DB: rag_system
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgvector-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d rag_system"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgvector-data:

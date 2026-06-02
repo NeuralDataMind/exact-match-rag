@@ -1,0 +1,24 @@
+# 1. Virtual Environments (Massive, system-specific dependencies)
+.venv/
+
+# 2. Secrets and Credentials (Committing this is a fireable offense)
+.env
+
+# 3. Python Cache (Useless compiled bytecode)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 4. Personal/Temporary Files (Don't pollute the repository)
+note.txt
+
+# 5. Editor & OS Junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 6. Database Volumes (If you ever bind-mount Postgres locally)
+*.db
+*.sqlite3

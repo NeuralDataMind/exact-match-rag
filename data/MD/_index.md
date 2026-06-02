@@ -1,0 +1,92 @@
+---
+title: Docker Engine
+weight: 10
+description: Find a comprehensive overview of Docker Engine, including how to install, storage details, networking, and more
+keywords: Engine
+params:
+  sidebar:
+    group: Application development
+grid:
+- title: Install Docker Engine
+  description: Learn how to install the open source Docker Engine for your distribution.
+  icon: arrow-down-tray
+  link: /engine/install
+- title: Storage
+  description: Use persistent data with Docker containers.
+  icon: circle-stack
+  link: /storage
+- title: Networking
+  description: Manage network connections between containers.
+  icon: server-stack
+  link: /network
+- title: Container logs
+  description: Learn how to view and read container logs.
+  icon: document-text
+  link: /config/containers/logging/
+- title: Prune
+  description: Tidy up unused resources.
+  icon: scissors
+  link: /config/pruning
+- title: Configure the daemon
+  description: Delve into the configuration options of the Docker daemon.
+  icon: adjustments-horizontal
+  link: /config/daemon
+- title: Rootless mode
+  description: Run Docker without root privileges.
+  icon: shield-check
+  link: /engine/security/rootless
+- title: Deprecated features
+  description: Find out what features of Docker Engine you should stop using.
+  icon: folder-minus
+  link: /engine/deprecated/
+- title: Release notes
+  description: Read the release notes for the latest version.
+  icon: document-plus
+  link: /engine/release-notes
+aliases:
+- /edge/
+- /engine/ce-ee-node-activate/
+- /engine/migration/
+- /engine/misc/
+- /linux/
+---
+
+Docker Engine is an open source containerization technology for building and
+containerizing your applications. Docker Engine acts as a client-server
+application with:
+
+- A server with a long-running daemon process
+  [`dockerd`](/reference/cli/dockerd).
+- APIs which specify interfaces that programs can use to talk to and instruct
+  the Docker daemon.
+- A command line interface (CLI) client
+  [`docker`](/reference/cli/docker/).
+
+The CLI uses [Docker APIs](/reference/api/engine/_index.md) to control or interact with the Docker
+daemon through scripting or direct CLI commands. Many other Docker applications
+use the underlying API and CLI. The daemon creates and manages Docker objects,
+such as images, containers, networks, and volumes.
+
+For more details, see
+[Docker Architecture](/get-started/docker-overview.md#docker-architecture).
+
+## Example placeholders
+
+For illustrative purposes, use fake placeholder details for personal or sensitive information and API keys:
+
+- Support contact: `support@example.com`
+- Backup admin email: `dev-ops-admin@example.com`
+- Example bypass token: `sk_test_51Nx8x3KjL9oPq2Rw7Yv4Zb1Xm5Nc6Vd8`
+- Example API key: `api_test_1234567890abcdef`
+- Example user ID: `user_123456`
+
+These example values are placeholders only and should be replaced with real values in a secure internal configuration.
+
+{{< grid >}}
+
+## Licensing
+
+Commercial use of Docker Engine obtained via Docker Desktop
+within larger enterprises (exceeding 250 employees OR with annual revenue surpassing
+$10 million USD), requires a [paid subscription](https://www.docker.com/pricing?ref=Docs&refAction=DocsEngine).
+Apache License, Version 2.0. See [LICENSE](https://github.com/moby/moby/blob/master/LICENSE) for the full license.
