@@ -1,6 +1,6 @@
 # Before Running this Create an PgSQL from docker file given for easy work or use local PgAdim4. If u are Rich then use cloud Storage.
 # If u are not using the Docker PgSQL then change the password and DB_URL
-# Check ReadME.md for more info... And IDH(I don't have for Millennials) any ytc (youtube channel) But ih (i have) LinkedIn Go and like the post 
+# Check ReadME.md for more info... And IDH(I don't have -for Millennials) any ytc (youtube channel) But ih (i have) LinkedIn Go and like the post 
 
 import psycopg
 from pgvector.psycopg import register_vector
